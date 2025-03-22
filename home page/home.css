@@ -302,3 +302,292 @@ nav .nav-links ul li{
     bottom: 30px;
     left: 65px;
 }
+
+/* Featured Products */
+.feature-typos{
+    width: 100%;
+    margin: 30px 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.featured-products{
+    display: flex;
+    margin: 50px 20px;
+    justify-content: space-around;
+}
+
+.feature-main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product 1 */
+.feature-image1{
+    width: 250px;
+    height: 250px;
+    background: url(../assets/home/product1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.feature-image1:hover{
+    background-size: 130%;
+}
+
+.feature-image1 a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+.type{
+    font-weight: 300;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.feature-typo h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.feature-typo p{
+    font-size: 18px;
+}
+
+/* Product 2 */
+.feature-image2{
+    width: 250px;
+    height: 250px;
+    background: url(../assets/home/product2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.feature-image2:hover{
+    background-size: 130%;
+}
+
+.feature-image2 a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+.type{
+    font-weight: 300;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.feature-typo h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.feature-typo p{
+    font-size: 18px;
+}
+
+/* Product 3 */
+.feature-image3{
+    width: 250px;
+    height: 250px;
+    background: url(../assets/home/product3.jpg);
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.feature-image3:hover{
+    background-size: 180%;
+}
+
+.feature-image3 a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+.type{
+    font-weight: 300;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.feature-typo h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.feature-typo p{
+    font-size: 18px;
+}
+
+/* Product 4 */
+.feature-image4{
+    width: 250px;
+    height: 250px;
+    background: url(../assets/home/product4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.feature-image4:hover{
+    background-size: 130%;
+}
+
+.feature-image4 a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+.type{
+    font-weight: 300;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.feature-typo h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.feature-typo p{
+    font-size: 18px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    background: #1a202c;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.foot1 h1{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.foot1 h1 span{
+    color: red;
+}
+
+.foot1 p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.foot2 h1{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.foot2 a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.foot2 a:hover{
+    color: aqua;
+}
+
+.foot3 h1{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.foot3 a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.foot3 a:hover{
+    color: aqua;
+}
+
+.foot4 h1{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.foot4 p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.foot4 .input-group{
+    width: 100%;
+    display: flex;
+}
+
+.input-group input{
+    padding: 10px 20px;
+    width: 59%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.input-group button{
+    width: 39%;
+    padding: 10px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    background: blue;
+    color: #fff;
+    font-size: 15px;
+}
+
+.copyrights{
+    width: 100%;
+    padding-top: 50px;
+    border-top: 2px solid #fff;
+    text-align: center;
+}
