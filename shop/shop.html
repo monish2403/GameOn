@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameOn | Shop</title>
+
+        <!-- Font Awesome CDN -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      />
+
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <h1>Game<span>On</span></h1>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Company</a></li>
+        </ul>
+      </div>
+      <div class="nav-end">
+        <a href="#" title="just"><i class="fa-solid fa-user"></i></a>
+        <a href="#" title="just"><i class="fa fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+
+    <div class="min-h-screen">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Explore the Best Sports Gear!</h1>
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search for products..."
+            />
+            <button class="search-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Filters and Products -->
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="filter-section">
+              <h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+                Categories
+              </h2>
+              <div class="category-buttons" id="categoryButtons"></div>
+            </div>
+
+            <div class="filter-section">
+              <h2>Brands</h2>
+              <div class="brand-filters" id="brandFilters"></div>
+            </div>
+
+            <div class="filter-section">
+              <h2>Price Range</h2>
+              <input
+                type="range"
+                id="priceRange"
+                min="0"
+                max="1000"
+                value="1000"
+              />
+              <div class="price-labels">
+                <span>$0</span>
+                <span>$1000</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+          <main class="products-section">
+            <div class="products-header">
+              <h2>Products</h2>
+              <div class="sort-container">
+                <select id="sortSelect">
+                  <option value="newest">Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="best">Best Sellers</option>
+                </select>
+                <svg
+                  class="chevron-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid"></div>
+
+            <div class="load-more">
+              <button id="loadMoreBtn">Load More</button>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- Cart Preview -->
+      <div class="cart-preview" id="cartPreview">
+        <button class="cart-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count">3</span>
+        </button>
+        <div class="cart-dropdown">
+          <h3>Shopping Cart</h3>
+          <div class="cart-items">
+            <div class="cart-item">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                alt="Product"
+              />
+              <div class="cart-item-details">
+                <h4>Nike Air Max</h4>
+                <p>1 × $129.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-footer">
+            <div class="cart-total">
+              <span>Total:</span>
+              <span>$129.99</span>
+            </div>
+            <button class="checkout-button">Checkout</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <div class="foot1">
+            <h1>Game <span>On</span></h1>
+            <p>
+              Your one-stop destination for premium <br />
+              sports equipment and accessories.
+            </p>
+          </div>
+          <div class="foot2">
+            <h1>Quick Links</h1>
+            <a href="#">Shop</a>
+            <a href="#">Brand</a>
+            <a href="#">Collections</a>
+            <a href="#">Offers</a>
+          </div>
+          <div class="foot3">
+            <h1>Categories</h1>
+            <a href="#">Running</a>
+            <a href="#">Basket Ball</a>
+            <a href="#">Football</a>
+            <a href="#">Tennis</a>
+          </div>
+          <div class="foot4">
+            <h1>Newsletter</h1>
+            <p>Subscribe to get special offers <br />and updates.</p>
+            <div class="input-group">
+              <input type="email" placeholder="enter email" />
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <p>&copy; 2025 Game<span>On</span>. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="shop.js"></script>
+  </body>
+</html>
